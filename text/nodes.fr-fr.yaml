@@ -1,0 +1,47 @@
+nodes:
+  input.keyboard: "Clavier"
+  input.mouse:
+    .: "Souris"
+    left: "Gauche"
+    right: "Droite"
+    middle: "Milieu"
+    side: "Latéral <>"
+  input.cursor: "Curseur"
+  input.midi:
+    .: "MIDI"
+    channel: "(Canal <>)"
+    pitchwheel:
+      .: "Modulateur de hauteur"
+      positive: "[.] +"
+      negative: "[.] -"
+  input.gamepad:
+    .: "Manette"
+    north: "Nord"
+    south: "Sud"
+    east: "Est"
+    west: "Ouest"
+    start: "Start"
+    back: "Retour"
+    guide: "Guide"
+    leftshoulder: "L"
+    rightshoulder: "R"
+    lefttrigger: "Gâchette gauche"
+    righttrigger: "Gâchette droite"
+    dpad:
+      .: "Pad directionnel"
+      up: "[.] ↑"
+      down: "[.] ↓"
+      left: "[.] ←"
+      right: "[.] →"
+    leftstick:
+      .: "Stick gauche"
+      up: "[.] ↑"
+      down: "[.] ↓"
+      left: "[.] ←"
+      right: "[.] →"
+    rightstick:
+      .: "Stick droit"
+      up: "[.] ↑"
+      down: "[.] ↓"
+      left: "[.] ←"
+      right: "[.] →"
