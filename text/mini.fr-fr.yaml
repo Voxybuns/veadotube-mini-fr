@@ -32,11 +32,18 @@ mini:
       windowsize: "taille de la fenêtre"
       spoutstream: "flux spout"
       syphonstream: "flux syphon"
+      framerate:
+        .: "cadence d'images par seconde"
+        vsync: "synchronisation verticale"
+        uncapped: "illimitée"
+        capped: "limitée"
+        at: "limitée à"
       websocket:
         .: "serveur websocket"
         address: "adresse du serveur"
         status: "en service sur"
-      autohideui: "masquer interface auto."
+      loadallstates: "charger tous les états"
+      autohideui: "masquer interface automatiquement"
       hideui: "masquer l'interface..."
     display:
       .: "paramètres d'affichage"
@@ -89,8 +96,8 @@ mini:
         smooth: "lissé"
         pixel: "pixellisé"
       resetimagetime: "lire du début"
-      blinksync: "clignements synchro."
-      blinkinterval: "temps entre clignements"
+      blinksync: "clignements synchronisés"
+      blinkinterval: "intervalle des clignements"
       blinkduration: "durée des clignements"
     effects:
       .: "effets de l'état"
