@@ -1,0 +1,27 @@
+objects:
+  image: Image
+    scalemode: mise à l'échelle
+      fit: ajuster
+      fill: remplir
+      stretch: étirer
+    displaymode: mode d'affichage
+      smooth: lissé
+      pixel: pixellisé
+  miniavatar: Avatar mini
+    desc: quatre images pour les mouvements de la bouche et le clignement, avec plusieurs états. Les avatars mini peuvent être utilisés dans veadotube mini et veadotube live !
+    input:
+      state: état actuel
+      activity: activité vocale
+    avatarscale: mise à l'échelle de l'avatar
+    movementscale: mise à l'échelle du mouvement
+    preloadstates: précharger les états
+      onlycurrent: charger l'état actuel uniquement
+      loadall: charger tous les états
+  dynamicavatar: Avatar dynamique
+    desc: images et groupes d'états illimités, attachez tout et n'importe quoi ensemble. Les avatars dynamiques peuvent être utilisés dans veadotube live !
+  honkavatar: Avatar HÖNK
+    input:
+      viseme: activité des visèmes
+      look: cible du regard
+      emote: émotion actuelle
+    avatarscale: mise à l'échelle de l'avatar

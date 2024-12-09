@@ -1,0 +1,291 @@
+nodes:
+  common:
+    any: (tous)
+    none: (aucun)
+  point:
+    x: valeur X
+    y: valeur Y
+    z: valeur Z
+  constant: Constante
+    boolean: Booléen
+      output: valeur booléenne
+      false: faux
+      true: vrai
+    number: Nombre
+      output: valeur numérique
+  convert: Convertir
+    combinepoint: Combiner les points
+      input.x: valeur X
+      input.y: valeur Y
+      input.z: valeur Z
+      output: point combiné
+  input: Entrée
+    cursor: Curseur
+      output: position du curseur
+    gamepad: Manette
+      output: données de la manette
+      attinput: données de la manette
+      button: Bouton
+        output: activité du bouton
+      stick: Stick
+        output: position et activité du stick
+      north: Nord
+      south: Sud
+      east: Est
+      west: Ouest
+      start: Start
+      back: Retour
+      guide: Guide
+      leftshoulder: L
+      rightshoulder: R
+      lefttrigger: Gâchette gauche
+      righttrigger: Gâchette droite
+      dpad: Pad directionnel
+        up: [.] ↑
+        down: [.] ↓
+        left: [.] ←
+        right: [.] →
+      leftstick: Stick gauche
+        up: [.] ↑
+        down: [.] ↓
+        left: [.] ←
+        right: [.] →
+      rightstick: Stick droit
+        up: [.] ↑
+        down: [.] ↓
+        left: [.] ←
+        right: [.] →
+    keyboard: Clavier
+      output: données et activité du clavier
+      attinput: données du clavier
+      key: Touche
+        output: activité de la touche
+    midi: MIDI
+      output: données et activité MIDI
+      attinput: données MIDI
+      controller: Contrôleur
+        output: valeur du contrôleur
+      note: Note
+        output: valeur et activité de la note
+      allchannels: Tous les canaux
+      channel: Canal <>
+      pitchwheel: Molette de modulation
+        positive: [.] +
+        negative: [.] -
+        output: valeur de la molette de modulation
+    mouse: Souris
+      output: données et activité du bouton de souris
+      attinput: données du bouton de souris
+      button: Bouton
+        output: activité du bouton de souris
+      left: Gauche
+      right: Droite
+      middle: Milieu
+      side: Latéral <>
+    microphone: Microphone
+      output: données et volume audio
+    camera: Caméra
+      output: flux vidéo
+    kinect: Kinect
+      output: données et flux vidéo Kinect (si sélectionné)
+      space: espace de suivi
+        raw: brut
+        rawpitch: brut + ajustement du tangage
+        color: ajusté au flux couleur
+        depth: ajusté au flux de profondeur
+  ws: Websocket
+    name: nom
+    id: identifiant
+    boolean: Booléen
+      output: valeur booléenne
+    number: Nombre
+      output: valeur numérique
+    stateevents: Évènements de l'état
+      output: évènements de l'état
+  logic: Logique
+    and: Et
+      input.input: valeur booléenne
+      output: fonction ET des entrées
+    not: Négation
+      input.input: valeur booléenne
+      output: fonction NON de l'entrée
+    or: Ou
+      input.input: valeur booléenne
+      output: fonction OU des entrées
+    branch: Branche
+      input.condition: condition
+      input.false: valeur si faux
+      input.true: valeur si faux
+      output: valeur choisie
+    compare: Comparaison
+      input.a: première valeur
+      input.b: deuxième valeur
+      output: résultat booléen
+      equal: égal à
+      notequal: différent de
+      less: inférieur à
+      lessequal: inférieur ou égal à
+      greater: supérieur à
+      greaterequal: supérieur ou égal
+  math: Mathématiques
+    add: Addition
+      input.input: terme
+      output: somme des entrées
+    subtract: Soustraction
+      input.input0: diminuende
+      input.input1: diminuateur
+      output: différence des entrées
+    multiply: Multiplication
+      input.input: facteur
+      output: produit des entrées
+    divide: Division
+      input.input0: dividende
+      input.input1: diviseur
+      output: quotient des entrées
+    remainder: Reste
+      input.input0: dividende
+      input.input1: diviseur
+      output: reste des entrées
+    modulo: Modulo
+      input.input0: dividende
+      input.input1: diviseur
+      output: modulo des entrées
+    negate: Inversion
+      input.input: valeur numérique
+      output: valeur inversée
+    oneminus: Un moins
+      input.input: valeur numérique
+      output: un moins l'entrée
+    clamp: Limiter
+      input.input: valeur numérique
+      input.min: valeur minimum
+      input.max: valeur maximum
+      output: valeur limitée
+    clamp01: Limiter entre 0 et 1
+      input.input: valeur numérique
+      output: valeur limitée
+    clamp11: Limiter entre -1 et 1
+      input.input: valeur numérique
+      output: valeur limitée
+    round: Arrondir
+      input.input: valeur numérique
+      output: valeur arrondie
+    floor: Entier inférieur
+      input.input: valeur numérique
+      output: valeur numérique
+    ceil: Entier supérieur
+      input.input: valeur numérique
+      output: valeur numérique
+    min: Minimum
+      input.input: valeur numérique
+      output: minimum des entrées
+    max: Maximum
+      input.input: valeur numérique
+      output: maximum des entrées
+    average: Moyenne
+      input.input: valeur numérique
+      output: moyenne des entrées
+    abs: Valeur absolue
+      input.input: valeur numérique
+      output: valeur absolue de l'entrée
+    length: Longueur
+      input.input: valeur numérique
+      output: longueur de l'entrée
+    sqrt: Racine carrée
+      input.input: valeur numérique
+      output: racine carrée de l'entrée
+    sin: Sinus
+      input.input: valeur numérique
+      output: sinus de l'entrée
+    cos: Cosinus
+      input.input: valeur numérique
+      output: cosinus de l'entrée
+    tan: Tangente
+      input.input: valeur numérique
+      output: tangente de l'entrée
+    sincos: Sinus et cosinus
+      input.input: valeur numérique
+      output: sinus et cosinus de l'entrée comme valeurs X/Y
+    asin: Arc sinus
+      input.input: valeur numérique
+      output: arc sinus de l'entrée
+    acos: Arc cosinus
+      input.input: valeur numérique
+      output: arc cosinus de l'entrée
+    atan: Arc tangente
+      input.input: valeur numérique
+      output: arc tangente de l'entrée
+    normalize: Normaliser
+      input.input: valeur vectorielle
+      output: vecteur normalisé
+    circletosquare: Cercle vers carré
+      input.input: valeur vectorielle
+      output: résultat ajusté au carré
+    squaretocircle: Carré vers cercle
+      input.input: valeur vectorielle
+      output: résultat ajusté au cercle
+    lerp: Interpolation linéaire
+      input.a: valeur numérique à 0
+      input.b: valeur numérique à 1
+      input.t: valeur de l'interpolation
+      output: valeur interpolée
+    unlerp: Défaire l'interpolation linéaire
+      input.a: valeur numérique à 0
+      input.b: valeur numérique à 1
+      input.t: valeur de l'interpolation
+      output: valeur interpolée
+  neural: Neural
+    ovrlipsync: Oculus Lipsync
+      input.input: données audio
+      output: données Oculus Lipsync et activité vocale
+      attinput: données Oculus Lipsync
+      laughter: Rire
+        output: score de rire
+      viseme: Visème
+        output: score de visème
+    silerovad: Silero VAD
+      input.input: données audio
+      output: données Silero VAD et activité vocale
+      attinput: données Silero VAD
+      activity: Activité
+        output: score d'activité
+      silence: Silence
+        output: score de silence
+  state: État
+    events:
+      clear: effacer
+      set: définir
+      push: empiler
+      pop: dépiler
+      toggle: basculer
+    storage: Stockage d'état
+      input.input: évènements d'état
+      output: état dans le stockage
+      ifempty: si vide...
+        keep: laisser vide
+        add: ajouter un état par défaut
+      stacklimit: limite de la pile
+    signalevents: Évènement de l'état (signal)
+      output: signal d'évènement
+      mode: mode
+        press: à l'appui
+        release: au relâchement
+        hold: si maintenu
+    booleanevents: Évènement de l'état (booléen)
+      input.input: valeur booléenne
+      output: signal de l'évènement
+      state: état
+      on: si vrai
+      off: si faux
+  time: Temps
+    output: temps depuis le démarrage de l'application, en secondes
+  volumefilter: Filtrer le volume
+    input.input: volume d'entrée
+    input.volume: seuil du volume (facultatif)
+    input.delay: seuil de l'atténuation (facultatif)
+    output: activité de la sortie
+  signal: Signal
+    output: activité du signal
+    assign: assigner
+    clear: effacer
+    listening: écoute en cours...

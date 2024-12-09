@@ -8,8 +8,9 @@ Traduction française non officielle pour le logiciel de marionette virtuelle [v
 
 ### ⬇️ Versions
 
-- Pour **veadotube mini version 2.1 et plus**, téléchargez la [version 1.1.0 du pack](https://github.com/Voxybuns/veadotube-mini-fr/releases/tag/v1.1.0)
-- Pour **veadotube mini version 2.0a**, téléchargez la [version 1.0.0 du pack](https://github.com/Voxybuns/veadotube-mini-fr/releases/tag/v1.0.0)
+- Pour **veadotube mini version 2.1 et plus**, téléchargez la [version 1.2.0 du pack](https://github.com/Voxybuns/veadotube-mini-fr/releases/tag/v1.2.0)
+- Pour **veadotube mini version 2.0a**, téléchargez la [version 1.1.0 du pack](https://github.com/Voxybuns/veadotube-mini-fr/releases/tag/v1.1.0)
+- Pour **veadotube mini version 2.0**, téléchargez la [version 1.0.0 du pack](https://github.com/Voxybuns/veadotube-mini-fr/releases/tag/v1.0.0)
 
 ### 📜 Instructions d'installation
 

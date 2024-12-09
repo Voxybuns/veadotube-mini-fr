@@ -1,0 +1,138 @@
+mini:
+  misc:
+    on: marche
+    off: arrêt
+    auto: automatique
+    copy: copier
+    paste: coller
+  alert:
+    windowsize: taille de la fenêtre : <> × <>
+    errorid: code d'erreur : <>
+    loadingavatar: chargement de l'avatar...
+    avatarfailed: le chargement de l'avatar a échoué !
+    loadingimage: chargement de l'image...
+    imagefailed: le chargement de l'image a échoué !
+    hideui1: l'interface est masquée !
+    hideui2: double-cliquez n'importe où pour l'afficher.
+    hideui3: l'interface est à nouveau affichée !
+  credits:
+    line1: veadotube mini <> par <>
+    line2: visitez <> pour plus d'infos
+  intro:
+    avatar: modifiez votre avatar !
+      sub: ajoutez des images, animations, & états
+    settings: configurez l'application !
+      sub: sélectionnez votre micro, modifiez l'arrière-plan, & plus encore
+    save: enregistrez votre avatar !
+      sub: ou chargez un avatar préfabriqué
+    website: visitez notre site web !
+      sub: pour des mises à jour et des guides
+  settings:
+    avatar: paramètres de l'avatar
+      load: charger un avatar mini...
+      save: enregistrer l'avatar mini...
+      loaddefault: charger l'avatar par défaut...
+      selectdefault: sélectionner un avatar
+      author: par <>
+      cancel: annuler...
+    window: paramètres du programme
+      language: langue
+      windowname: titre de la fenêtre
+      windowsize: taille de la fenêtre
+      framerate: cadence d'images par seconde
+        vsync: synchronisation verticale
+        uncapped: illimitée
+        capped: limitée
+        at: limitée à
+      spoutstream: flux spout
+      syphonstream: flux syphon
+      websocket: serveur websocket
+        address: adresse du serveur
+        status: en service sur
+      loadallstates: charger tous les états
+      autohideui: masquer interface automatiquement
+      hidegrid: masquer la grille d'arrière-plan
+      hideui: masquer l'interface...
+    display: paramètres d'affichage
+      avatarscale: échelle de l'avatar
+      viewscale: facteur d'échelle
+      viewoffsetx: décalage horizontal
+      viewoffsety: décalage vertical
+      movescale: amplitude d'animation
+      background: arrière-plan
+        color: couleur unie
+        transparent: transparent
+        image: image
+        hue: teinte
+        saturation: saturation
+        value: valeur
+        load: charger une image d'arrière-plan...
+    microphone: paramètres du micro
+      volumecutoff: seuil du micro
+      delaycutoff: durée d'atténuation du micro
+      noisereduction: atténuation du bruit
+        none: désactivée
+      devices: périphériques disponibles
+      none: (aucun périphérique trouvé)
+      pushtotalk: appuyer-pour-parler
+        websocket: utiliser websocket
+  states:
+    state: état
+    avatarstate: état de l'avatar
+    copycurrent: copier l'état actuel
+    copyname: copie de <>
+    addblank: ajouter un état vierge
+    image:
+      closed: image de bouche fermée
+      open: image de bouche ouverte
+      closedblink: image de clignement avec bouche fermée
+      openblink: image de clignement avec bouche ouverte
+      replace: remplacer l'image...
+      export: exporter l'image...
+      remove: supprimer l'image
+      selectclosed: sélectionner l'image de bouche fermée...
+      selectopen: sélectionner l'image de bouche ouverte...
+      selectclosedblink: sélectionner l'image de clignement avec bouche fermée...
+      selectopenblink: sélectionner l'image de clignement avec bouche ouverte...
+    properties: propriétés de l'état
+      name: nom de l'état
+      id: identifiant de l'état
+      imagemode: mode de l'image
+        smooth: lissé
+        pixel: pixellisé
+      resetimagetime: lire du début
+      blinksync: clignements synchronisés
+      blinkinterval: intervalle des clignements
+      blinkduration: durée des clignements
+    effects: effets de l'état
+      state: effets
+        select: ajouter un effet
+        activea: actif quand la bouche est fermée
+        activeb: actif quand la bouche est ouverte
+        none: aucun
+      transition: transitions
+        select: ajouter une transition
+        activea: active quand la bouche s'ouvre
+        activeb: active quand la bouche se ferme
+        none: aucune
+      preset: préconfiguration
+      default: par défaut
+      custom: personnalisé
+      cancel: annuler...
+      delete: supprimer
+    shortcuts: raccourcis de l'état
+      none: (aucun)
+      assign: assigner un raccourci...
+      assignnew: assigner un nouveau raccourci...
+      remove: supprimer le raccourci
+      mode: mode d'activation
+        press: à l'appui
+        release: au relâchement
+        hold: si maintenu
+      screen:
+        waiting: en attente d'une entrée...
+        supported: entrées supportées :
+        esc: ...ou appuyez sur [nodes.input.keyboard] Échap pour annuler
+    delete: supprimer l'état
+      confirm: supprimer l'état ?
+      confirmyes: oui !

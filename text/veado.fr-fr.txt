@@ -1,0 +1,67 @@
+veado:
+  misc:
+    on: marche
+    off: arrêt
+    auto: automatique
+    transform: transformation
+      position: position
+      rotation: rotation
+      skew: inclinaison
+      scale: échelle
+  menu:
+    file: fichier
+      newscene: nouvelle scène
+      openscene: ouvrir une scène...
+      savescene: enregistrer la scène
+      savesceneas: enregistrer la scène sous...
+      saveavataras: enregistrer l'avatar sous...
+      newavatar: nouvel avatar
+      newavatarmore: nouvel avatar...
+      newwindow: nouvelle fenêtre...
+      openavatar: ouvrir un avatar...
+      saveavatar: enreigstrer l'avatar
+      closeavatar: fermer l'avatar
+      exit: quitter
+    edit: modifier
+      undo: annuler
+      redo: rétablir
+    view: fenêtre
+  window:
+    livesettings: paramètres
+      language: langue
+      websocket: websocket
+        address: adresse websocket
+        serveon: (en service sur <>)
+        serveoff: (pas en service)
+    livescene: prévisualisation de la scène
+    livesceneproperties: configuration de la scène
+      display: paramètres d'affichage
+      scene: propriétés de la scène
+      fps:
+        mode: mode de cadence d'images
+        vsync: synchronisation verticale
+        uncapped: non limité
+        capped: limité
+        custom: personnalisé
+      spout: serveur spout
+      syphon: serveur syphon
+      hideui: masquer l'interface...
+      size: dimensions
+    liveobjectlist: objets
+      import: sélectionner un fichier d'objet...
+    liveobjectproperties: propriétés de l'objet
+      source: source
+      size: dimensions
+      objecttype: objet <>
+    livestatelist: état
+      groupnum: groupe d'états n°<>
+      create: créer un groupe d'états
+      empty: (vide)
+      state: état
+      deletegroup: supprimer le groupe d'états
+      delete: supprimer l'état
+    nodeeditor: éditeur de noeuds
+      create: créer un noeud
+      node: noeud
+      revertsize: rétablir la taille
+      delete: supprimer

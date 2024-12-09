@@ -1,0 +1,28 @@
+minieffects:
+  parameter:
+    amount: amplitude
+    amountx: amplitude axe X
+    amounty: amplitude axe Y
+    velocity: vitesse
+    duration: durée
+    timeperiod: durée du cycle
+    periodoffset: décalage du cycle
+  state:
+    randommove: mouvement aléatoire
+      vibe: vibration
+      shake: tremblement
+      shakemore: grand tremblement
+    wavemove: mouvement cyclique
+      breathe: respiration
+      circle: en cercle
+    jump: saut
+      bouncy: bondissant
+      excited: excité
+      nervous: nerveux
+    waverotate: rotation cyclique
+      wobbly: oscillation
+      wobblymore: grande oscillation
+    darken: assombrir
+  transition:
+    jump: saut
+      default: par défaut
